@@ -71,9 +71,7 @@ admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
   databaseURL: "https://sundeep-kumarr-default-rtdb.firebaseio.com"
 });
-
-//
-const db = admin.firestore();
+// Send Telegram Notification
 function sendTelegramNotification(formData) {
   // Replace these with your actual Telegram Bot token and chat ID.
   const TELEGRAM_BOT_TOKEN = '7479865106:AAF-WWEWDRTUvTK5Zq7dOtPYA2g3uRIPR5w';
@@ -92,6 +90,20 @@ function sendTelegramNotification(formData) {
   .then(data => console.log('Telegram response:', data))
   .catch(error => console.error('Error sending Telegram notification:', error));
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
